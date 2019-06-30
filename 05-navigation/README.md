@@ -81,8 +81,8 @@
 ## Task 5 - Bonus
 - Instead of doing the state retrieval and navigation in the screen component, externalize this logic into a `Service`.
 - Create a `services` dir inside `src`
-- There, we'll have two files: `Navigation.js` and `Storage.js`
-- `Navigation.js` has a `class` with `static` attributes and methods.
+- There, we'll have two files: `navigation.js` and `storage.js`
+- `navigation.js` has a `class` with `static` attributes and methods.
 - Write a `static` method that sets the `navigation` reference (aka `this.props.navigation`) as an attribute on this class. We'll use this to perform navigation.
 
 ```js
@@ -94,7 +94,7 @@ class Navigation {
   }
 }
 ```
-- Add another method to perform the initial setup of the app: taking `state` from `Storage` and performing the initial navigation
+- Add another method to perform the initial setup of the app: taking `state` from `storage` and performing the initial navigation
 - Implement two methods in the `Storage` `class` to perform the saving and retrieval of data from `AsyncStorage`. These methods would be `saveAppState(data)` and `getAppState()`.
 > The key to save in AsyncStorage should not be visible outside the `Storage` class. This is for encapsulation and to adhere to the [Principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege).
 - The methods we are exposing to the "outside world" from any service, is call the [API](https://en.wikipedia.org/wiki/Application_programming_interface) for that service.
