@@ -7,33 +7,33 @@
 - https://facebook.github.io/react-native/
 
 ## Task 1
-- Go to [gitlab.com](https://gitlab.com/) and create a repository named `on-this-day`
+- Go to [gitlab.com](https://gitlab.com/) and create a repository named `internship-2019`
 - Clone the project from git
 - Create a new [react native CLI app](https://facebook.github.io/react-native/docs/getting-started)
 - Push the new created project to git
 
 ## Task 2
-- Create a new `tab navigation` component and position it at the bottom of the screen
+- Create a new `TabNavigation` component and position it at the bottom of the screen
 - Create and display the following screens when switching the tab: `Home`, `XO`, `Card`, `Account`
 
 ## Task 3
 - This screen will be the `Home Tab`
-- Take a look at the [Wikipedia API](https://en.wikipedia.org/api/rest_v1/). We'll use it to get all kinds of data from Wikipedia and display it in our app.
-- Fetch the "on this day" events
+- Take a look at the [Star Wars API](https://swapi.co/). We'll use it to get all kinds of data and display it in our app
+- Fetch the `/people` data
 - List the data according to the wireframe (TBD)
 
-> Use the fetch API and get data from the following endpoint `https://en.wikipedia.org/api/rest_v1/feed/onthisday/all/mm/dd`.
+> Get data from the following endpoint `https://swapi.co/api/people/`
 
 ## Task 4
-- Add 6 checkmarks: `All, Selected, Births, Deaths, Holidays, Events`
-- Filter the events by the checkmarks. Note: you can't select `All` together with any other filter
-- Add an input to the list
-- Add search feature to the list using that input
-- Add `swipe to remove item` feature 
+- Add an input on top of the list with an `Add` button
+- Implement the add to list feature
+- Add a new input below the first one and use it to add a search feature
+- Add a `remove item` feature in-line of each entry in the list
+- Optional: Instead of the button, implement a `swipe to remove item` feature 
 
 ## Task 5
 - This screen will be the `XO Tab`
-- Implement tic-tac-toe `Solo Play` game mode
+- Implement a 3x3 tic-tac-toe `Solo Play` game mode
 - Optional: make `Computer play mode`
 
 > Hint: for checking the winner, create an array with all winning position pairs
@@ -52,6 +52,17 @@ this.state = {
 ## Task 6
 - This screen will be the `Card Tab`
 - Create a card flip memory game. [Example](https://www.webgamesonline.com/memory/)
-- Make 4 rows with 3 cards on each row
-- Optional: add a score
+- Make 4 rows with 4 cards on each row
+- Add a `Reset` button
 - Design is up to you
+
+The `Card` component will have the following structure:
+```json
+{
+    "id": 1,
+    "image": "http://img.test",
+    "show": true
+}
+```
+
+- Use local images or use an open API to generate the image of the cards
