@@ -13,8 +13,10 @@
 - Push the new created project to git
 
 ## Task 2
+- Create a new `Header` component and position it at the top of the screen. It should contain a title.
 - Create a new `TabNavigation` component and position it at the bottom of the screen
 - Create and display the following screens when switching the tab: `Home`, `XO`, `Card`, `Account`
+- Wireframe [example](https://www.dropbox.com/s/x4w1resi5suhahp/iPhone%20X%20-%20Example.png?dl=0)
 
 ## Task 3
 - This screen will be the `Home Tab`
