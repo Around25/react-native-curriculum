@@ -2,9 +2,12 @@
 
 ## Resources
 - https://reactjs.org/
+- https://jscomplete.com/learn/why-react
 - https://www.freecodecamp.org/news/learning-react-roadmap-from-scratch-to-advanced-bff7735531b6/
 - https://github.com/MoonHighway/learning-react/tree/master/chapter-02
 - https://facebook.github.io/react-native/
+- https://around25.com/blog/an-introduction-to-react-vs-react-native/
+- https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents
 
 ## Task 1
 - Go to [gitlab.com](https://gitlab.com/) and create a repository named `internship-2019`
@@ -65,6 +68,17 @@ The `Card` component will have the following structure:
     "image": "http://img.test",
     "show": true
 }
+```
+
+You can use this game state to get started:
+```js
+this.state = {
+  isFlipped: new Array(16).fill(false), // array with position of the elements. In order to know which element is flipped
+  shuffledCards: [], // array with card objects
+  prevCard: -1, // need to know the previous card to check the match
+  prevCardIndex: -1, // need to know previous card index to check the match
+  clickCount: 1, // we have to count the clicks
+};
 ```
 
 - Use local images or use an open API to generate the image of the cards
