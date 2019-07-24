@@ -29,14 +29,22 @@
 
 > Get data from the following endpoint `https://swapi.co/api/people/`
 
-## Task 4
+## Task 4 - Optional
+- Instead of doing the API call for data retrieval directly the screen component, externalize this logic into a `Service`:
+- Create a `api` dir inside src
+- Create a `services/` folder and make a `star-wars.js` file
+- Write and export an `API object` that is using a third party library for fetching the data from API. *baseURL will be `https://swapi.co/api/`*
+- Create an `sw.js` file in the `api/` folder. Here, create a `getPeople()` function that makes the API call using the `API object` from `services/star-wars.js` and returns the result data
+- Import `sw.js` as `swAPI` in the component and using the `getPeople`function, fetch the data
+
+## Task 5
 - Add an input on top of the list with an `Add` button
 - Implement the add to list feature
 - Add a new input below the first one and use it to add a search feature
 - Add a `remove item` feature in-line of each entry in the list
 - Optional: Instead of the button, implement a `swipe to remove item` feature 
 
-## Task 5
+## Task 6
 - This screen will be the `XO Tab`
 - Implement a 3x3 tic-tac-toe `Solo Play` game mode
 - Optional: make `Computer play mode`
@@ -54,7 +62,7 @@ this.state = {
 };
 ```
 
-## Task 6
+## Task 7
 - This screen will be the `Card Tab`
 - Create a card flip memory game. [Example](https://www.webgamesonline.com/memory/)
 - Make 4 rows with 4 cards on each row
