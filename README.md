@@ -32,8 +32,6 @@ Welcome to the Around25 react-native internship 👋.
   - Animated API
   - Perrmissions
   - Camera
-  - Firebase 
-  - Push notifications
   - Unit testing
   
 - 12 August - 30 August
